@@ -9,7 +9,7 @@ if (isset($serverRequest)) {
 
 switch ($requestedPage[0]) {
 	case '/commentaire':
-		include_once(__DIR__.'/Controller/index.php');
+		include_once(__DIR__.'/Controller/login.php');
 		break;
 	
 	default:
