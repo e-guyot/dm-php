@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Forum</title>
+  <title>Squeegee's Forum</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-  <header>
-    <h1>Hello on this forum</h1>
-  </header>
   <?php include_once(__DIR__.'/view_navbar.php'); ?>
   <main>
     <div class="container">
@@ -27,7 +24,18 @@
       </div>
     </div>
     <?php //endforeach; ?>
-    <!-- Paginer les pages -->
+    <nav aria-label="...">
+  <ul class="pagination pagination-sm">
+    <li class="page-item active" aria-current="page">
+      <span class="page-link">
+        1
+        <span class="sr-only">(current)</span>
+      </span>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+  </ul>
+</nav>
   </div>
 </main>
 <?php include_once(__DIR__.'/view_footer.php'); ?>
