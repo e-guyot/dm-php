@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Coucou</title>
+  <title>Forum</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
@@ -11,22 +11,6 @@
   <?php include_once(__DIR__.'/view_navbar.php'); ?>
   <main>
     <div class="container">
-      <form action="" method="post">
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Email address</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Object</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1">
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Example textarea</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <input type="submit" name="Envoyer">
-      </form>
-
       <?php// foreach ($students as $student): ?>
       <div class="card">
        <div class="form-group">
@@ -43,6 +27,7 @@
       </div>
     </div>
     <?php //endforeach; ?>
+    <!-- Paginer les pages -->
   </div>
 </main>
 <?php include_once(__DIR__.'/view_footer.php'); ?>
