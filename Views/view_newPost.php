@@ -8,21 +8,22 @@
   <?php include_once(__DIR__.'/view_navbar.php'); ?>
   <main>
     <div class="container">
-      <form action="" method="post">
+      <form action="../Modele/modele_formNewPost.php" method="post">
         <div class="form-group">
-          <label for="exampleFormControlInput1">Email address</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          <label for="exampleFormControlInput1">Email address *</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Object</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1">
+          <input type="text" class="form-control" id="exampleFormControlInput1">
         </div>
         <div class="form-group">
-          <label for="exampleFormControlTextarea1">Example textarea</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <label for="exampleFormControlTextarea1">Example textarea *</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
         </div>
         <input type="submit" name="Envoyer">
       </form>
+      <a>Merci de renseigner le champ indiquer par *</a>
   </div>
 </main>
 <?php include_once(__DIR__.'/view_footer.php'); ?>
