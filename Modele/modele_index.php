@@ -35,3 +35,12 @@ function getAllCategoriesName()
 
     return $query->fetchAll();
 }
+
+function insertNewPost($title, $content, $idUser, $idCategory){
+    $db = connect();
+
+    $query = $db->prepare('UPDATE ');
+    $query->execute();
+
+    return true;
+}
