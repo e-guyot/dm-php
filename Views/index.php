@@ -11,8 +11,8 @@
       <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
     </div>
     <div class="form-group">
-      <label for="exampleFormControlInput1">Objet</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      <label for="exampleFormControlInput1">Object</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1">
     </div>
     <div class="form-group">
       <label for="exampleFormControlTextarea1">Example textarea</label>
