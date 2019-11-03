@@ -1,0 +1,25 @@
+version: "3.7"
+services:
+
+ mariadb:
+  image: mariadb
+  environment: 
+    - MYSQL_ROOT_PASSWORD=''
+    - MYSQL_DATABASE=dm
+
+ phpmyadmin:
+  image: phpmyadmin/phpmyadmin
+  depends_on:
+    - mariadb
+  ports:
+   - 8080:80
+  environment:
+   - PMA_HOST=mariadb
+ webmvc:
+  build: .
+  ports:
+   - "8888:80"
+  volumes: 
+   - .:/var/www/html
+  depends_on:
+   - mariadb
