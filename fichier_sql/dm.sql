@@ -43,10 +43,9 @@ CREATE TABLE IF NOT EXISTS `commentaires` (
 --
 
 INSERT INTO `commentaires` (`id`, `titre`, `libelle`, `id_user`, `archive`) VALUES
-(1, 'dromadaire', 'vicieuxx', 1, 1),
-(4, 'hello Hello worldda', 'Hello world stellu\r\nsds', 1, 0),
-(5, 'StellouÂ²', 'salut ', 1, 1),
-(6, 'infvienÂ²', 'ozk,oe,ve*Ã¹$\r\nhuuuuuuuuuugguguguugugug', 1, 1);
+(1, 'Nouveau blog', 'Bonjour, \r\n Bienvenue sur le nouveau blog !', 1, 0),
+(2, 'Hello', 'Hello world', 1, 1),
+(3, 'Hello archive', 'Ce message est archivé, il a été supprimé', 1, 1)
 
 -- --------------------------------------------------------
 
