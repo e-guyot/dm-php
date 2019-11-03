@@ -7,4 +7,6 @@
   </div>
 </div>
     
-<?php echo '';}?>
+<?php echo''; //si les autres champ sont vides
+}
+?>

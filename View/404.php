@@ -1,8 +1,1 @@
-<?php
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-echo 'erreur';
+<h1>Oups ! La page que vous rechercher ne correspond pas.</h1>
