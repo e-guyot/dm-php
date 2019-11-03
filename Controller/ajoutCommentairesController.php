@@ -17,7 +17,7 @@ return require_once (__DIR__ . '/../View/footer.php');
 $titre = '';
 $text = '';
 $param = 'ajout';
-$textButton = 'Ajouter';
+$textButton = 'Ajouter'; //renvoie vers la page d'ajout si le post a été mal effectué
 require_once (__DIR__ . '/../View/navBar.php');
 require_once (__DIR__ . '/../View/ajout.php');
 require_once (__DIR__ . '/../View/footer.php');

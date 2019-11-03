@@ -7,6 +7,6 @@
   </div>
 </div>
     
-<?php echo''; //si les autres champ sont vides
+<?php echo''; //si les autres champ sont vides.
 }
 ?>

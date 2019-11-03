@@ -1,6 +1,6 @@
 <?php
 $route = '/dm_php2/dm-php/';
-if (PHP_SESSION_NONE === session_status()) { //test si la session est bien active
+if (PHP_SESSION_NONE === session_status()) { //test si la session est bien active.
 	session_start();
 	return $route;
 }

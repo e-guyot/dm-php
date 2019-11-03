@@ -6,7 +6,7 @@ if (PHP_SESSION_NONE === session_status()) {
 
 require_once (__DIR__ . '/../Model/bdd.php');
 
-$archivesCommentaires = getArchivesCommentaires(); //affiche les fichiers supprimé
+$archivesCommentaires = getArchivesCommentaires(); //affiche les fichiers supprimés
 require_once (__DIR__ . '/../View/navBar.php');
 require_once (__DIR__ . '/../View/archives.php');
 require_once (__DIR__ . '/../View/footer.php');

@@ -13,21 +13,21 @@ function connect() { //connexion à la bdd
     }
 }
 
-function getUsers() { //obtiens tous les utilisateurs de la bdd
+function getUsers() { //obtention tous les utilisateurs de la bdd
     $db = connect();
     $query = $db->prepare('SELECT * FROM users');
     $query->execute();
     return $query->fetchAll();
 }
 
-function getCommentaires() { //obtiens tous les commentaires non supprimés
+function getCommentaires() { //obtention tous les commentaires non supprimés
     $db = connect();
     $query = $db->prepare('SELECT c.id, titre, pseudo, libelle FROM commentaires c join users u on id_user = u.id where archive = 0');
     $query->execute();
     return $query->fetchAll();
 }
 
-function getCommentaire($idCommentaire) { //obtien le commentaire ayant l'id n° tant
+function getCommentaire($idCommentaire) { //obtention le commentaire ayant l'id n° tant
     $db = connect();
     $query = $db->prepare("SELECT c.id, titre, pseudo, libelle FROM commentaires c join users u on id_user = u.id where archive = 0 && c.id = $idCommentaire");
     $query->execute();
@@ -41,7 +41,7 @@ function addCommentaire($id_user, $titre, $libelle) { //ajoute un commentaire
     $query->fetchAll();
 }
 
-function getArchivesCommentaires() { //obtiens les commentaires supprimé
+function getArchivesCommentaires() { //obtention les commentaires supprimé
     $db = connect();
     $query = $db->prepare('SELECT titre, pseudo, libelle FROM commentaires join users u on id_user = u.id where archive = 1');
     $query->execute();
