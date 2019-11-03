@@ -6,9 +6,13 @@ if (PHP_SESSION_NONE === session_status()) {
 
 require_once (__DIR__ . '/../Model/bdd.php');
 
-$paramUrl = explode('?', explode('/', $_SERVER['REQUEST_URI'])[2]);
+$paramUrl = explode('/', $_SERVER['REQUEST_URI']); //découpe les différents parametre de l'url
 
-switch ($paramUrl[0]) {
+foreach ($paramUrl as $value) { //PARCOURS LES PARAMETRES DE L'URL
+    $paramModif = testParamUrl($value);
+}
+
+switch ($paramModif[0]) {
     case 'modifier' :
         $id_commentaire = $_GET['id'];
         $commentaire = getCommentaire($_GET['id']);
@@ -33,4 +37,11 @@ switch ($paramUrl[0]) {
         require_once (__DIR__ . '/../View/commentaires.php');
         return require_once (__DIR__ . '/../View/footer.php');
 }
+
+function testParamUrl ($paramUrl) { //test si dans les paramètres de l'url existe le parametre 'modifier'
+    if (preg_match('/modifier\?id=/', $paramUrl) || preg_match('/modifierComm/', $paramUrl)) {
+        return explode('?', $paramUrl);
+    }
+}
+
 
