@@ -45,7 +45,8 @@ CREATE TABLE IF NOT EXISTS `commentaires` (
 INSERT INTO `commentaires` (`id`, `titre`, `libelle`, `id_user`, `archive`) VALUES
 (1, 'Nouveau blog', 'Bonjour, \r\n Bienvenue sur le nouveau blog !', 1, 0),
 (2, 'Hello', 'Hello world', 1, 1),
-(3, 'Hello archive', 'Ce message est archivé, il a été supprimé', 1, 1)
+(3, 'Hello archive', 'Ce message est archivé, il a été supprimé', 1, 1);
+COMMIT;
 
 -- --------------------------------------------------------
 
@@ -68,7 +69,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `pseudo`, `email`, `password`) VALUES
-(1, 'test', 'test@example.com', 'password');
+(1, 'test', 'test@example.com', '$2y$10$7D6/0BBWaF1XUX7hbIAzXe.H.y8/Htlj0swIA9McJkw3j7.6MtYUq');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

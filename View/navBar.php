@@ -15,19 +15,19 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="/dm_php2/accueil">Accueil<span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="<?=$route?>accueil">Accueil<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/dm_php2/commentaires">Commentaires</a>
+                                <a class="nav-link" href="<?=$route?>commentaires">Commentaires</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/dm_php2/ajout">Ajout</a>
+                                <a class="nav-link" href="<?=$route?>ajout">Ajout</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/dm_php2/archive">Archive</a>
+                                <a class="nav-link" href="<?=$route?>archive">Archive</a>
                             </li>
                             <li>
-                                <a href="/dm_php2/deconnexion" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Déconnexion</a>
+                                <a href="<?=$route?>deconnexion" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Déconnexion</a>
                             </li>
                         </ul>
                     </div>

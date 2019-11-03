@@ -1,4 +1,4 @@
-<form action="/dm_php2/<?= $param;?>" method="post">
+<form action="<?= $route. $param;?>" method="post">
   <div class="form-group">
     <label for="titre">Titre</label>
     <input type="text" class="form-control" id="titre" name="titre" value="<?= $titre;?>">

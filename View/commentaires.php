@@ -12,8 +12,8 @@
                 <th><?= $commentaire['pseudo']; ?></th>
                 <td><?= $commentaire['titre'] ?></td>
                 <td><?= $commentaire['libelle'] ?></td>
-                <td><a class="btn btn-primary" href="/dm_php2/modifier?id=<?= $commentaire['id'];?>" role="button">Modifier</a></td>
-                <td><a class="btn btn-primary" href="/dm_php2/supprimer?id=<?= $commentaire['id'];?>" role="button">Supprimer</a></td>
+                <td><a class="btn btn-primary" href="<?=$route?>modifier?id=<?= $commentaire['id'];?>" role="button">Modifier</a></td>
+                <td><a class="btn btn-primary" href="<?$route?>supprimer?id=<?= $commentaire['id'];?>" role="button">Supprimer</a></td>
         </tr>
     <?php } ?>
     </tbody>

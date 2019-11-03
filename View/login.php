@@ -11,7 +11,7 @@
     <body>
         <div class="row">
             <div class="container">
-                <form action="/dm_php2/login" method="post">
+                <form action="<?=$route?>login" method="post">
                     <div class="form-group">
                         <label for="pseudo">Pseudo</label>
                         <input type="text" class="form-control" name="pseudo" id="pseudo">
