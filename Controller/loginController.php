@@ -10,11 +10,10 @@ require_once (__DIR__ . '/../Model/bdd.php');
 
 $users = getUsers();
 if ('POST' === $_SERVER['REQUEST_METHOD']) {
-
     foreach ($users as $key => $user) {
         $username = sanitize($_POST['pseudo']);
         $password = sanitize($_POST['password']);
-        if ($user['pseudo'] === $username && $user['password'] === $password) {
+        if ($user['pseudo'] === $username && password_verify($password, $user['password'])) {
             $_SESSION['user'] = ['id' => $user['id'], $user['pseudo'] => $username, 'password' => $user['password']];
          require_once (__DIR__ . '/../View/navBar.php');
         return require_once (__DIR__ . '/../View/footer.php');
