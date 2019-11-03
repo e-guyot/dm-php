@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  ven. 01 nov. 2019 à 21:55
+-- Généré le :  Dim 03 nov. 2019 à 17:08
 -- Version du serveur :  5.7.19
 -- Version de PHP :  7.1.9
 
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `commentaires` (
   `id_user` int(11) DEFAULT NULL,
   `archive` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `commentaires`
@@ -45,8 +45,10 @@ CREATE TABLE IF NOT EXISTS `commentaires` (
 INSERT INTO `commentaires` (`id`, `titre`, `libelle`, `id_user`, `archive`) VALUES
 (1, 'Nouveau blog', 'Bonjour, \r\n Bienvenue sur le nouveau blog !', 1, 0),
 (2, 'Hello', 'Hello world', 1, 1),
-(3, 'Hello archive', 'Ce message est archivé, il a été supprimé', 1, 1);
-COMMIT;
+(7, 'Hello archive ', 'Ce message a Ã©tÃ© supprimÃ© !', 1, 1),
+(8, 'Hello archive ', 'Ce message a Ã©tÃ© supprimÃ© !', 1, 1),
+(9, 'Hello archive ', 'Ce message a Ã©tÃ© supprimÃ© !', 1, 1),
+(10, 'test', 'test Modif', 1, 0);
 
 -- --------------------------------------------------------
 
