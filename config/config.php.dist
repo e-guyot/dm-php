@@ -1,8 +1,7 @@
 <?php
-
-const DATABASE8CONFIG = [
-	'host' => 'mariadb',
-	'database' => 'wp',
-	'user' => 'root',
-	'password' => 'root'
+const DATABASE_CONFIG = [
+    'host' => 'localhost',
+    'database' => 'dm',
+    'user' => 'root',
+    'password' => ''
 ];

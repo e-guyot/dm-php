@@ -4,8 +4,8 @@ services:
  mariadb:
   image: mariadb
   environment: 
-    - MYSQL_ROOT_PASSWORD=root
-    - MYSQL_DATABASE=wp
+    - MYSQL_ROOT_PASSWORD=''
+    - MYSQL_DATABASE=dm
 
  phpmyadmin:
   image: phpmyadmin/phpmyadmin
